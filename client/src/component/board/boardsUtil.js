@@ -24,14 +24,22 @@ function NewNode(i, j) {
   }
 function Board(){
   
+
+
   this.grid = creategrid();
+
+
+  //coustom start and end point
+  const x_lim = Math.floor(this.grid.length/2);
+  const y_lim = Math.floor(this.grid[0].length/2);
+
   this.startPoint = {
-    x : 0,
-    y : 0
+    x : x_lim-1,
+    y : y_lim-10
   };
   this.endPoint = {
-    x : this.grid.length - 1,
-    y : this.grid[0].length - 1
+    x : x_lim,
+    y : y_lim+4
   } ;
   this.mousepressed = false ;
   this.changingStart = false;
