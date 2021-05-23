@@ -12,7 +12,7 @@
     animation: animation1 2s ease;
 }
 .shortest--path--node{
-    background-color:yellow;
+    background-color:yellowgreen;
     
     border: yellow 0.1px solid;
     animation: animation2 1s ease-in;
@@ -84,12 +84,12 @@
 }
 
 
-@media screen and (max-width: 1320px){
+@media screen and (max-width: 700px){
     .Node--node{
         /* width: 30px;
         height: 30px; */
-        width: calc(90vw/50);
-        height: calc(90vw/50);
+        width: calc(95vw/50);
+        height: calc(95vw/50);
         
         display: block;
         border: 0.001vw solid cadetblue;

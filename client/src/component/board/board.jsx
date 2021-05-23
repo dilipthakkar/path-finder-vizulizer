@@ -24,11 +24,13 @@ import { dfs } from "../../algorithms/dfs";
 
 const Board = (props) => {
   const [board, setBoard] = useState({});
+  const [changeboard , setchnageBoard] = useState(false);
 
   useEffect(() => {
     let Board = createBoard();
     console.log(Board);
     setBoard(Board);
+
   }, []);
 
   const StartFindingPath = () => {

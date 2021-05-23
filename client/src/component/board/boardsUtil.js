@@ -1,5 +1,16 @@
-const row = 30;
-const col = 40
+let row = 20;
+let col = 40;
+const chnageRowsOnWindowSize = ()=>{
+  if(window.innerWidth <600) {
+    row = 50;
+  }
+  else if(window.innerWidth>600 && window.innerWidth<1300){
+    row = 25;
+  }
+}
+chnageRowsOnWindowSize();
+
+
 function NewNode(i, j) {
     this.x = i;
     this.y = j;
@@ -11,6 +22,7 @@ function NewNode(i, j) {
     this.neighbours = [{x:i-1 , y: j},{x:i , y: j-1},{x:i+1 , y: j},{x:i , y: j+1}]
   }
 function Board(){
+  
   this.grid = creategrid();
   this.startPoint = {
     x : 0,
@@ -37,6 +49,7 @@ function Board(){
 }
 
 export const creategrid = () => {
+  console.log(row , col);
     const arr = [];
     for (let i = 0; i < row; i++) {
       const arrI = [];
