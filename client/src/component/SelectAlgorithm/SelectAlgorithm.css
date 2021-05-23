@@ -1,0 +1,56 @@
+.select--main{
+    background-color: white;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10%;
+
+}
+
+.select--main:hover{
+    background-color:rgb(33, 192, 102);
+}
+.select--main:hover .select--main--heading{
+    background-color:rgb(33, 192, 102) ;
+}
+
+.select--main ul{
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.select--main ul:hover{
+    background-color:teal;
+    
+}
+
+.select--main--heading--open{
+    background-color: teal;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+.select--main--heading--close{
+    background-color:white;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1300px){
+    .select--main{
+        padding: 5px;
+    
+    }
+    
+    .select--main ul{
+        font-size: 10px;
+    }       
+}

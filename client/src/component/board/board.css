@@ -1,0 +1,264 @@
+.grid--row {
+  display: flex;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.header--main--container {
+  width: 100vw;
+  height: 17vh;
+  max-height: 17vh;
+  min-height: 150px;
+}
+.header--btn {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-btn-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.header-bnt-select {
+  display: flex;
+  z-index: 99;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.header-btn-btn-group {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-right: 100px;
+}
+
+.monster--logo {
+  width: 80px;
+  height: 80px;
+  margin-left: 50px;
+  margin-top: -10px;
+}
+
+/*  for header info section group   */
+.header--info {
+  position: absolute;
+  width: 70%;
+  top: 90px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header--info--section {
+  display: flex;
+}
+
+.header--info--section--text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.header--info--section--block {
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.play--btn {
+  background-color: #274f2f;
+  border: 0;
+}
+.play--btn:disabled {
+  background-color: brown;
+  display: none;
+  border: 0;
+}
+
+.reset--grid-btn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.header-btn-btn:hover {
+  background-color: rgb(33, 192, 102);
+}
+
+@media screen and (max-width: 1320px) {
+  .header--main--container {
+    width: 100vw;
+    height: 17vh;
+    max-height: 17vh;
+    min-height: 100px;
+  }
+  .header--btn {
+    width: 100%;
+    top: 20px;
+  }
+
+  .header-btn-btn {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .header-btn-btn-group {
+    width: 50%;
+    margin-right: 50px;
+  }
+
+  .monster--logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: -5px;
+  }
+
+  /*  for header info section group   */
+  .header--info {
+    top: 80px;
+  }
+
+  .header--info--section--text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .header--info--section--block {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+
+  .reset--grid-btn {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .grid--row {
+    display: flex;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header--main--container {
+    width: 100vw;
+    height: 17vh;
+    max-height: 17vh;
+    min-height: 100px;
+  }
+  .header--btn {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-btn-btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    line-height: calc(2.5vw+2px);
+    color: #ffffff;
+  }
+
+  .header-bnt-select {
+    display: flex;
+    z-index: 99;
+  }
+
+  .header-btn-btn-group {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-right: 10vw;
+  }
+
+  .monster--logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 5vw;
+    margin-top: 5px;
+  }
+
+  /*  for header info section group   */
+  .header--info {
+    position: absolute;
+    width: 70%;
+    top: 90px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header--info--section {
+    display: flex;
+  }
+
+  .header--info--section--text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    line-height: clac(2.5vw + 2px);
+    color: #ffffff;
+  }
+
+  .header--info--section--block {
+    width: 2.5vw;
+    height: 2.5vw;
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .play--btn {
+    background-color: #274f2f;
+    border: 0;
+  }
+  .play--btn:disabled {
+    background-color: brown;
+    display: none;
+    border: 0;
+  }
+
+  .reset--grid-btn {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 10%;
+  }
+
+  .header-btn-btn:hover {
+    background-color: rgb(33, 192, 102);
+  }
+}

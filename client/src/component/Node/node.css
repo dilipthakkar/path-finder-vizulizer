@@ -1,0 +1,84 @@
+.Node--node{
+    /* width: 30px;
+    height: 30px; */
+    width: calc(90vw/50);
+    height: calc(90vw/50);
+    
+    display: block;
+    border: 0.001vw solid cadetblue;
+}
+.visitednode{
+    background-color: skyblue;
+    animation: animation1 2s ease;
+}
+.shortest--path--node{
+    background-color:yellow;
+    
+    border: yellow 0.1px solid;
+    animation: animation2 1s ease-in;
+}
+.wallnode{
+    background-color: rgb(3, 41, 66);
+    border: 0.001vw solid rgb(3, 41, 66);
+    animation: wallnode-animation 0.2s;
+}
+.start--node{
+    background-image: url('../../assests/start.png');
+    background-size:cover;
+    border: white solid 0.001vw;
+    animation: animation2 1s;
+}
+.end--node{
+    background-image: url('../../assests/monster2.png');
+    background-size:cover;
+    border: white solid 0.001vw;
+    animation: animation2 1s;
+}
+
+@keyframes animation1{
+    0%{
+        background-color: cornsilk;
+        border-radius: 25%;
+    }
+    30%{
+        background-color:mediumslateblue;
+
+        
+        border-radius: 20%;
+
+    }
+    60%{
+        background-color:dodgerblue;
+
+        border-radius: 15%;
+
+    }
+    100%{
+        background-color:deepskyblue;
+
+        border-radius: 0%;
+
+    }
+}
+
+
+
+@keyframes animation2{
+    from {
+		transform: scale(0.3);
+	}
+	to {
+		transform: scale(1);
+	}
+    
+}
+
+
+@keyframes wallnode-animation{
+    from {
+		transform: scale(0.6);
+	}
+	to {
+		transform: scale(1);
+	}
+}
