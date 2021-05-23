@@ -88,8 +88,8 @@
     .Node--node{
         /* width: 30px;
         height: 30px; */
-        width: calc(95vw/50);
-        height: calc(95vw/50);
+        width: calc(95vw/35);
+        height: calc(90vw/40);
         
         display: block;
         border: 0.001vw solid cadetblue;

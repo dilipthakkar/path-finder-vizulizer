@@ -1,10 +1,11 @@
 let row = 20;
 let col = 40;
 const chnageRowsOnWindowSize = ()=>{
-  if(window.innerWidth <600) {
-    row = 50;
+  if(window.innerWidth <700) {
+    row = 40;
+    col = 30;
   }
-  else if(window.innerWidth>600 && window.innerWidth<1300){
+  else if(window.innerWidth>700 && window.innerWidth<1300){
     row = 25;
   }
 }
