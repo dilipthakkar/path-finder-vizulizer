@@ -60,8 +60,14 @@ export const creategrid = () => {
       }
       arr.push(arrI);
     }
-    arr[0][0].isStart = 1;
-    arr[row-1][col-1] .isEnd = 1;
+    const x_lim = Math.floor(arr.length/2);
+    const y_lim = Math.floor(arr[0].length/2);
+    arr[x_lim-1][y_lim-10].isStart = 1;
+    arr[x_lim][y_lim+4].isEnd = 1;
+
+    // arr[0][0].isStart = 1;
+    
+    // arr[row-1][col-1] .isEnd = 1;
     // setGrid(arr);
     return arr;
   };
