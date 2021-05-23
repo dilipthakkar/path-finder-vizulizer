@@ -82,3 +82,16 @@
 		transform: scale(1);
 	}
 }
+
+
+@media screen and (max-width: 1320px){
+    .Node--node{
+        /* width: 30px;
+        height: 30px; */
+        width: calc(90vw/50);
+        height: calc(90vw/50);
+        
+        display: block;
+        border: 0.001vw solid cadetblue;
+    }
+}

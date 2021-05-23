@@ -1,4 +1,4 @@
-const row = 20;
+const row = 30;
 const col = 40
 function NewNode(i, j) {
     this.x = i;
